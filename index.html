@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>panda css</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .output {
+      padding-left: 16px;
+      height: 50vh;
+      border-bottom: 1px solid lightskyblue;
+      overflow-y: auto;
+    }
+    .output::-webkit-scrollbar {
+      display: none;
+    }
+    .buttons {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      flex-direction: column;
+      z-index: 3;
+    }
+    .buttons > button {
+      padding: 4px 8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <style class="css"></style>
+  <div class="output"></div>
+  <div class="buttons">
+    <button class="pause">暂停</button>
+    <button class="play">播放</button>
+    <button class="slow">慢速</button>
+    <button class="normal">正常</button>
+    <button class="fast">快速</button>
+  </div>
+  <div class="container">
+    <div class="panda">
+      <div class="body"></div>
+      <div class="chest"></div>
+      <div class="head breathe">
+        <div class="face-left">
+          <div class="eye-left">
+            <div class="eyeball-left"></div>
+          </div>
+        </div>
+        <div class="face-right">
+          <div class="eye-right">
+            <div class="eyeball-right"></div>
+          </div>
+        </div>
+        <div class="nose"></div>
+        <div class="mouth openMouth"></div>
+      </div>
+      <div class="ear-left breathe"></div>
+      <div class="ear-right breathe"></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script src="./run.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
