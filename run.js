@@ -169,7 +169,7 @@ const run = () => {
         window.clearInterval(timer)
         return
     }
-    output.innerText = css.innerHTML = str.substr(0, n)
+    output.innerText = css.innerHTML = str.substring(0, n-1)
     output.scrollTop = output.scrollHeight
 }
 
